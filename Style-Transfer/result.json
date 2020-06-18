@@ -2,7 +2,7 @@
     "Title": "Fast Style Transfer",
     "Tags": ["Computer Vision","Style Transfer"],
     "Architecture": "Other",
-    "Publisher": ["Tanmay Thakur", "SmokeTrees]",
+    "Publisher": ["Tanmay Thakur", "SmokeTrees"],
     "Links to Pub Tabs": ["links to", "above pubs"],
     "Problem Domain": "Image",
     "Model Format": "Tensorflow Hub",
