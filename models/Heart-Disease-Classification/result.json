@@ -1,0 +1,17 @@
+{
+    "Title": "Heartbeat Classification",
+    "Tags": ["Sequence Task","Disease Classification"],
+    "Architecture": "CNN-1D",
+    "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"]],
+    "Problem Domain": "Sequence",
+    "Model Format": "Tensorflow2",
+    "Language": "null",
+    "Dataset": [["MIT-BIH","https://physionet.org/content/mitdb/1.0.0/"]],
+    "Overview": "A classification task done on the MIT-BIH dataset, split into 5 labels.",
+    "Preprocessing": "null",
+    "Link": "https://drive.google.com/file/d/1H5pB5kYTmga7xsytxGVAH07KPK00tHwJ/view?usp=sharing",
+    "Usage": "usage.html",
+    "References": "[http://ecg.mit.edu/george/publications/mitdb-embs-2001.pdf]",
+    "Input Shape": "[(1,187,1)]",
+    "Output Shape": "[(1,5)]"
+}
