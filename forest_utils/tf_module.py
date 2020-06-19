@@ -22,7 +22,7 @@ class model_from_h5(object):
     def load_model(self):
         try:
             gdown.download(self.url_id, self.output, quiet = False)
-            return tf.keras.models.Model(self.output)
+            return tf.keras.models.load_model(self.output)
         except:
             print("Download error occured")
             
