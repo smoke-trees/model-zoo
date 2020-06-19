@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import json
 import gdown
 
 import tensorflow as tf
@@ -8,11 +9,11 @@ import tensorflow as tf
 
 class model_from_h5(object):
     
-    def __init__(self, url, output = 'model.h5'):
+    def __init__(self, output = 'model.h5'):
         super().__init__()
         
         self.base_url = 'https://drive.google.com/uc?id='
-        self.url_id = self.get_complete_url(url)
+        self.url_id = self.get_complete_url(json.load(open('result.json','r'))["Link"])
         self.output = output
         
     def get_complete_url(self, url):
