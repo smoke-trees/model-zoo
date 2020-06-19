@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import requests
 import gdown
 
-# import tensorflow as tf
+import tensorflow as tf
+
 
 class model_from_h5(object):
     
@@ -19,13 +19,10 @@ class model_from_h5(object):
         split_url = url.split('/')
         return self.base_url + split_url[5]
         
-    def download_model(self):
-        try:
-            gdown.download(self.url_id, self.output, quiet=False)
-        except:
-            print("Some error occured")
-            
     def load_model(self):
-        pass
- 
-    
+        try:
+            gdown.download(self.url_id, self.output, quiet = False)
+            return tf.keras.models.Model(self.output)
+        except:
+            print("Download error occured")
+            
