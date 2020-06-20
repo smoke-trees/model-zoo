@@ -7,7 +7,7 @@ import gdown
 import tensorflow as tf
 
 
-class model_from_h5(object):
+class ModelFromH5(object):
     
     def __init__(self, output = 'model.h5'):
         super().__init__()

@@ -11,7 +11,7 @@
     "Preprocessing": "null",
     "Link": "https://drive.google.com/file/d/1H5pB5kYTmga7xsytxGVAH07KPK00tHwJ/view?usp=sharing",
     "Usage": "usage.html",
-    "References": "[http://ecg.mit.edu/george/publications/mitdb-embs-2001.pdf]",
-    "Input Shape": "[(1,187,1)]",
-    "Output Shape": "[(1,5)]"
+    "References": ["http://ecg.mit.edu/george/publications/mitdb-embs-2001.pdf"],
+    "Input Shape": [[1,187,1]],
+    "Output Shape": [[1,5]]
 }
