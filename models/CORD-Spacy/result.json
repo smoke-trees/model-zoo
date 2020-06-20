@@ -1,0 +1,17 @@
+{
+    "Title": "COVID-19 Spacy Model",
+    "Tags": ["natural Language Processing"],
+    "Architecture": "CNN-1D",
+    "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"], ["CYBINT","https://github.com/CYBINT-IN"]],
+    "Problem Domain": "Text",
+    "Model Format": "Spacy",
+    "Language": "English",
+    "Dataset": [["CORD-19","https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge"]],
+    "Overview": "A document vector model trained on the unsupervised data present in the COVID research papers.",
+    "Preprocessing": "null",
+    "Link": "https://drive.google.com/file/d/1-3Gsq_-xoRcQe369jFpZo_Hokw7OCLYV/view?usp=sharing",
+    "Usage": "usage.html",
+    "References": ["https://cs.stanford.edu/~quocle/paragraph_vector.pdf"],
+    "Input Shape": [["Create NLP Spacy object"]],
+    "Output Shape": [["Spacy Functions"]]
+}
