@@ -1,3 +1,0 @@
-tensorflow==2.2.0
-spacy==2.2.4
-gdown==3.11.1
