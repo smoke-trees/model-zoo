@@ -13092,7 +13092,20 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nlp</span> <span class="o">=</span> <span class="n">ModelFromSpacy</span><span class="p">(</span><span class="s1">&#39;cord-doc2vec.model&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">load_model</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">ModelFromSpacy</span><span class="p">(</span><span class="s1">&#39;cord-doc2vec.model&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13111,54 +13124,21 @@ div#notebook {
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Downloading...
 From: https://drive.google.com/uc?id=1-3Gsq_-xoRcQe369jFpZo_Hokw7OCLYV
-To: /home/tanmay/Github/model-zoo/models/CORD-Spacy-doc2vec/model.zip
-3.80MB [00:00, 9.81MB/s]
+To: /Users/chunky/Desktop/forest-utils/model.zip
+3.80MB [00:00, 9.82MB/s]
 </pre>
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">doc1</span><span class="p">,</span> <span class="n">doc2</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="s2">&quot;What are the possible transmission media for COVID-19?&quot;</span><span class="p">),</span> <span class="n">nlp</span><span class="p">(</span><span class="s2">&quot;Through coughing and air droplets&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">doc1</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="n">doc2</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.2564228779925845</pre>
+<pre>&lt;spacy.lang.en.English at 0x1124f4810&gt;</pre>
 </div>
 
 </div>
