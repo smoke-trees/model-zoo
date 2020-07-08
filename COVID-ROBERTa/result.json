@@ -1,0 +1,17 @@
+{
+    "Title": "COVID-19 Transformer Model",
+    "Tags": ["Natural Language Processing"],
+    "Architecture": "ROBERTa",
+    "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"], ["CYBINT","https://github.com/CYBINT-IN"]],
+    "Problem Domain": "Text",
+    "Model Format": "Transformer",
+    "Language": "English",
+    "Dataset": [["CORD-19","https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge"]],
+    "Overview": "A ROBERTa model trained on the unsupervised data present in the COVID research papers.",
+    "Preprocessing": "preprocessing.html",
+    "Link": "https://drive.google.com/file/d/17JNRqbkXbRgjGpx1Rjn6-bIFMRE74xfQ/view?usp=sharing",
+    "Usage": "usage.html",
+    "References": ["https://arxiv.org/abs/1907.11692"],
+    "Input Shape": [["Tokenize using tokenizer"]],
+    "Output Shape": [["Transformer decides"]]
+}
