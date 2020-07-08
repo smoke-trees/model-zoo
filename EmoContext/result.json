@@ -9,7 +9,7 @@
     "Dataset": [["Tweets", null]],
     "Overview": "A model used to detect emotions from a tweet, using Transformers to convert strings into embeddings and then using a sequence top to classify it",
     "Preprocessing": "preprocessing.html",
-    "Link": "https://drive.google.com/file/d/13RAsFiUfqHOmDFMKA78IC71cD3pCRRvz/view?usp=sharing",
+    "Link": "https://drive.google.com/file/d/1ax7mwX2WIfTHFm3ZTo6cBFHCFZ-SMuA9/view?usp=sharing",
     "Usage": "usage.html",
     "References": ["https://www.aclweb.org/anthology/S19-2005/"],
     "Input Shape": [[1, 1, 768]],

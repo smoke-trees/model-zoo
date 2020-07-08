@@ -9,7 +9,7 @@
     "Dataset": [["IMDB Movie Reviews","https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews"]],
     "Overview": "A LSTM model trained to detect the sentiments on movie reviews, trained on the IMDB movie reviews dataset.",
     "Preprocessing": "preprocessing.html",
-    "Link": "https://drive.google.com/file/d/1YewYKF317M1f-Hb00kyc2ZWA8-v-6SXO/view?usp=sharing",
+    "Link": "https://drive.google.com/file/d/1tWAUuy7nXFbaIK8NyapR1V8hsIV-htDo/view?usp=sharing",
     "Usage": "usage.html",
     "References": ["https://paperswithcode.com/sota/sentiment-analysis-on-imdb"],
     "Input Shape": [[1,500]],
