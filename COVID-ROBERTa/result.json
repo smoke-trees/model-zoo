@@ -9,7 +9,7 @@
     "Dataset": [["CORD-19","https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge"]],
     "Overview": "A ROBERTa model trained on the unsupervised data present in the COVID research papers.",
     "Preprocessing": "preprocessing.html",
-    "Link": "https://drive.google.com/file/d/17JNRqbkXbRgjGpx1Rjn6-bIFMRE74xfQ/view?usp=sharing",
+    "Link": "https://drive.google.com/file/d/1ew8LWlMvMUQWQDVpmbLoOMlvpnLAmuZE/view?usp=sharing",
     "Usage": "usage.html",
     "References": ["https://arxiv.org/abs/1907.11692"],
     "Input Shape": [["Tokenize using tokenizer"]],
