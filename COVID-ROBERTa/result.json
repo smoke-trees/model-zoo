@@ -13,5 +13,6 @@
     "Usage": "usage.html",
     "References": ["https://arxiv.org/abs/1907.11692"],
     "Input Shape": [["Tokenize using tokenizer"]],
-    "Output Shape": [["Transformer decides"]]
+    "Output Shape": [["Transformer decides"]],
+    "Description": "The base model is RoBRTa, RoBERTa builds on BERT’s language masking strategy, wherein the system learns to predict intentionally hidden sections of text within otherwise unannotated language examples. The model is trained from scratch on the CORD dataset. CORD-19(COVID-19 Open Research Dataset) is a resource of over 200,000 scholarly articles, including over 90,000 with full text, about COVID-19, SARS-CoV-2, and related coronaviruses. This freely available dataset is provided to the global research community to apply recent advances in natural language processing and other AI techniques to generate new insights in support of the ongoing fight against this infectious disease. It’s based on Masked Language Model. Masked Language Modeling is a fill-in-the-blank task, where a model uses the context words surrounding a [MASK] token to try to predict what the [MASK] word should be. The base for our model is RoBERTa and the model is used for feature extraction."
 }
