@@ -30,7 +30,8 @@ You can also contribute to our model-zoo, please follow these instructions:
     "Usage": "usage.html", (Path to the usage.html file (type:str)) 
     "References": "[http://ecg.mit.edu/george/publications/mitdb-embs-2001.pdf]", (Links to any research papers you followed or want to reference (type:list(str)))
     "Input Shape": "[[1,187,1]]", (Input shapes of the model (type:list(list)))
-    "Output Shape": "[[1,5]]" (Output shapes of the model (type:list(list)))
+    "Output Shape": "[[1,5]]" (Output shapes of the model (type:list(list))),
+    "description": ""The MIT-BIH dataset has been used research into cardiac dynamics at more than 500 sites worldwide.\nThis model uses the Convolutional Neural Net Architecture on image data of shape [1,187,1]\nand then classifies the image into one of the five labels the dataset has been divided into."
 }
 ```
 ## Issues:
