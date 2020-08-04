@@ -13,5 +13,6 @@
     "Usage": "usage.html",
     "References": ["https://arxiv.org/abs/1906.02691"],
     "Input Shape": [[1,50]],
-    "Output Shape": [[28,28,1]]
+    "Output Shape": [[28,28,1]],
+    "Description": "Convolutional Variational Auto-Encoder for MNIST :\nA VAE is a probabilistic take on the autoencoder, a model which takes\nhigh dimensional input data compress it into a smaller representation.\nUnlike a traditional autoencoder, which maps the input onto a latent vector, a VAE maps the input data into the parameters of a probability distribution,\n such as the mean and variance of a Gaussian. This approach produces a continuous,\nstructured latent space, which is useful for image generation.\n\nEach MNIST image is originally a vector of 784 integers,\neach of which is between 0-255 and represents the intensity of a pixel.\nWe model each pixel with a Bernoulli distribution in our model, and we statically binarize the dataset.\n\nFor the encoder network, we use a two convolutional layers dense layer followed by fully connected layer.\nIn the decoder network, we mirror this architecture by using a fully-connected layer followed by three convolution transpose layers \n(a.k.a. deconvolutional layers in some contexts)."
 }
