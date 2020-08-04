@@ -12,5 +12,6 @@
     "Link": "https://drive.google.com/file/d/1ysdDfwfp0J8QgKphP3eUaryj6dK9SLf-/view?usp=sharing",
     "Usage": "None",
     "Input Shape": [[1,784]],
-    "Output Shape": [[1,5]]
+    "Output Shape": [[1,5]],
+    "Description": "It’s a CNN built to classify type of cancer from skin lesion images. Convolutional neural network (ConvNets or CNNs) is one of the main categories to do images recognition, and images classifications. The model is trained on Skin Cancer MNIST Dataset, where the shape of the input to the model is (1,784) and the output shape is (1,5)."
 }
