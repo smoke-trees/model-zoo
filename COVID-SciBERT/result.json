@@ -13,5 +13,6 @@
     "Usage": "usage.html",
     "References": ["https://arxiv.org/abs/1810.04805"],
     "Input Shape": [["Tokenize using tokenizer"]],
-    "Output Shape": [["Transformer decides"]]
+    "Output Shape": [["Transformer decides"]],
+    "Description": "BERT (Bidirectional Encoder Representations from Transformers)\nBERT applies the bidirectional training of Transformer, to language modelling.\nThis is in contrast to previous efforts which looked at a text sequence either\nfrom left to right or combined left-to-right and right-to-left training\nBidirectional Training makes the model have a better sense of language than\nuni-directional language models.\nBERT makes use of Transformer which is an attention mechanism that learns contextual relations between words.\nTransformer includes two separate mechanisms — an encoder that reads the text input and a decoder that produces\na prediction for the task. Since BERT’s goal is to generate a language model, only the encoder mechanism is necessary.\nBERT can be used for a wide variety of language tasks with little tweaks,\nThis model accompolishes classification tasks such as sentiment analysis are\ndone similarly to Next Sentence classification, by adding a classification layer on top of the Transformer output.\n\nSciBERT is a Pretrained Language Model for Scientific Text.SciBERT leverages unsupervised pretraining on a large multi-domain\ncorpus of scientific publications to improve performance on downstream scientific NLP tasks.\n"
 }
