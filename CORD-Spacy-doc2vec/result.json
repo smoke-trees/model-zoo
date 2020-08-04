@@ -13,5 +13,6 @@
     "Usage": "usage.html",
     "References": ["https://cs.stanford.edu/~quocle/paragraph_vector.pdf"],
     "Input Shape": [["Create NLP Spacy object"]],
-    "Output Shape": [["Spacy Functions"]]
+    "Output Shape": [["Spacy Functions"]],
+    "Description": "CORD-19(COVID-19 Open Research Dataset) is a resource of over 200,000 scholarly articles, including over 90,000 with full text, about COVID-19, SARS-CoV-2, and related coronaviruses. This freely available dataset is provided to the global research community to apply recent advances in natural language processing and other AI techniques to generate new insights in support of the ongoing fight against this infectious disease. The goal of doc2vec is to create a numeric representation of a document, regardless of its length. Format of the model is Spacy. The doc2vec models may be used in the following way: for training, we have used CORD-19. A word vector W is generated for each word, and a document vector D is generated for each document. The model also trains weights for a softmax hidden layer. In the inference stage, a new document may be presented, and all weights are fixed to calculate the document vector. It’s an unsupervised question answering model, using semantic search."
 }
