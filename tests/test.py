@@ -16,7 +16,7 @@ class TestZoo(unittest.TestCase):
         self.assertEqual(empty, [], "result.json missing in "+ " ".join(empty))
         
     def test_json(self):
-        l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests"]]
+        l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests", ".github"]]
         ll = [os.path.exists(os.path.join(i, 'result.json')) for i in l]
         all_dirs = [i for i,j in zip(l,ll) if j]
         keys = ['Title', 'Tags', 'Architecture', 'Publisher', 'Problem Domain', 'Model Format', 'Language', 'Dataset', 'Overview', 'Preprocessing', 'Link', 'Usage', 'References', 'Input Shape', 'Output Shape', 'Description']
