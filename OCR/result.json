@@ -14,5 +14,5 @@
     "References": ["https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42241.pdf"],
     "Input Shape": [[64,64]],
     "Output Shape": [[1,1]],
-    "description": "OCR or Optical Character Recognition is the task of converting  images of typed, handwritten or printed text into machine encoded text. This can be done either from a photo of a document, a scene-photo or from subtitle text superimposed on images. This model solves this task and is present in the Tensorflow format."
+    "Description": "OCR or Optical Character Recognition is the task of converting  images of typed, handwritten or printed text into machine encoded text. This can be done either from a photo of a document, a scene-photo or from subtitle text superimposed on images. This model solves this task and is present in the Tensorflow format."
 }
