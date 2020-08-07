@@ -21,8 +21,9 @@ class TestZoo(unittest.TestCase):
         all_dirs = [i for i,j in zip(l,ll) if j]
         keys = ['Title', 'Tags', 'Architecture', 'Publisher', 'Problem Domain', 'Model Format', 'Language', 'Dataset', 'Overview', 'Preprocessing', 'Link', 'Usage', 'References', 'Input Shape', 'Output Shape', 'Description']
         for i in all_dirs:
-            f = json.load(open(os.path.join(i, 'result.json'), 'rb'))
-            for k in f.keys():
+            with open(os.path.join(i, 'result.json'), 'rb') as f:
+                g = json.load()
+            for k in g.keys():
                 if k not in keys:
                     self.assertEqual(k, "", "Key " + k + " in " + i + " is not one of the recommended keys")
             f.close()
