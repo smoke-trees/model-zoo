@@ -1,0 +1,18 @@
+{
+    "Title": "Image Segmentation",
+    "Tags": ["Computer Vision"],
+    "Architecture": "U-Net",
+    "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"]],
+    "Problem Domain": "Image",
+    "Model Format": "Tensorflow2",
+    "Language": null,
+    "Dataset": [["Pets Dataset","http://www.robots.ox.ac.uk/~vgg/data/pets/data/"]],
+    "Overview": "Image segmentation with a U-Net-like architecture",
+    "Preprocessing": null,
+    "Link": "https://drive.google.com/file/d/1Kz8fwFR6KORt7y8Z5XZysJroXr7kUrr-/view?usp=sharing",
+    "Usage": "usage.html",
+    "References": ["https://keras.io/examples/vision/oxford_pets_image_segmentation/"],
+    "Input Shape": [[160, 160, 3]],
+    "Output Shape": [[160, 160, 3]],
+    "Description": "U-Net, a kind of Convolutional Neural Networks (CNN) approach, was first proposed by Olaf Ronneberger, Phillip Fischer, and Thomas Brox in 2015 with the suggestion of better segmentation on biomedical images. Segmentation is a process that partitions an image into regions. It is an image processing approach that allows us to separate objects and textures in images. We have done supervised segmentation on the Pets Dataset using a U-Net like architecture."
+}
