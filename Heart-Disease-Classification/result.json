@@ -13,5 +13,6 @@
     "Usage": "usage.html",
     "References": ["http://ecg.mit.edu/george/publications/mitdb-embs-2001.pdf"],
     "Input Shape": [[1,187,1]],
-    "Output Shape": [[1,5]]
+    "Output Shape": [[1,5]],
+    "Description": "The MIT-BIH dataset has been used research into cardiac dynamics at more than 500 sites worldwide. This model uses the Convolutional Neural Net Architecture on image data of shape [1,187,1] and then classifies the image into one of the five labels the dataset has been divided into."
 }

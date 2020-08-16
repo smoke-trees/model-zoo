@@ -1,0 +1,18 @@
+{
+    "Title": "EmoContext Mobile BERT",
+    "Tags": ["Natural Language Processing"],
+    "Architecture": "BERT",
+    "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"]], 
+    "Problem Domain": "Text",
+    "Model Format": "Transformer",
+    "Language": "English",
+    "Dataset": [["emo","https://huggingface.co/datasets/emo"]],
+    "Overview": "A MobileBERT model trained on the emo dataset which classifies conversational data into 4 distinct emotions.",
+    "Preprocessing": null,
+    "Link": "https://drive.google.com/file/d/1PiXwqCVa0jaKZeaHN5Euiu8nlYgTsM36/view?usp=sharing",
+    "Usage": "usage.html",
+    "References": ["https://arxiv.org/abs/2004.02984"],
+    "Input Shape": [["Tokenize using tokenizer"]],
+    "Output Shape": [["Transformer decides"]],
+    "Description": "Like the original BERT, MobileBERT is task-agnostic, that is, it can be generically applied to various downstream NLP tasks via simple fine-tuning. Basically, MobileBERT is a thin version of BERT_LARGE, while equipped with bottleneck structures and a carefully designed balance between self-attentions and feed-forward networks. What we have done is trained a MobileBERT model from scratch on the EmoContext Dataset for Sequence Classification."
+}

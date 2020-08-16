@@ -14,7 +14,7 @@ You can also contribute to our model-zoo, please follow these instructions:
 - The PR must contain an jupyter notebook converted to html showing how to use the models, if you want, you can show usage using the forest_utils to load models.
 - A preprocessing notebook as html can also be added, but it's utility can also be shown inside the aforementioned usage file.
 - The PR must also contain a json file, containing the following information as types mentioned, for example
-```json
+```
 {
     "Title": "Heartbeat Classification", (Title of the model (type:str))
     "Tags": ["Sequence Task","Disease Classification"], (ML tags you want to add it to (type:list(str)), must be one of the tags already created, check forest website to see available tags)
@@ -30,9 +30,12 @@ You can also contribute to our model-zoo, please follow these instructions:
     "Usage": "usage.html", (Path to the usage.html file (type:str)) 
     "References": "[http://ecg.mit.edu/george/publications/mitdb-embs-2001.pdf]", (Links to any research papers you followed or want to reference (type:list(str)))
     "Input Shape": "[[1,187,1]]", (Input shapes of the model (type:list(list)))
-    "Output Shape": "[[1,5]]" (Output shapes of the model (type:list(list)))
+    "Output Shape": "[[1,5]]" (Output shapes of the model (type:list(list))),
+    "Description": "The MIT-BIH dataset has been used research into cardiac dynamics at more than 500 sites worldwide.\nThis model uses the Convolutional Neural Net Architecture on image data of shape [1,187,1]\nand then classifies the image into one of the five labels the dataset has been divided into.", (Model Description (type:str))
 }
 ```
+Before contributing please ensure that you pass all tests, just run python tests/test.py
+
 ## Issues:
 - If you run into any issues in using the model or the utility package please create the appropriate issue on our repo and label them.
 - Please note that any kind of models that have weights loaded from elsewhere will not be accepted into the model-zoo.

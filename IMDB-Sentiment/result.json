@@ -13,5 +13,6 @@
     "Usage": "usage.html",
     "References": ["https://paperswithcode.com/sota/sentiment-analysis-on-imdb"],
     "Input Shape": [[1,500]],
-    "Output Shape": [[1,1]]
+    "Output Shape": [[1,1]],
+    "Description": "This is an LSTM model made with Tensorflow which takes the input of shape [1,500] containing data about the movie reviews from IMDB and performs binary classification using Long Short Term Memory Network and accompolishes the task of getting a deep understanding of the language in movie reviews and their inferential meanings"
 }

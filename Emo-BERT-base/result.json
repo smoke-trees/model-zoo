@@ -1,0 +1,18 @@
+{
+    "Title": "EmoContext BERT Base",
+    "Tags": ["Natural Language Processing"],
+    "Architecture": "BERT",
+    "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"]], 
+    "Problem Domain": "Text",
+    "Model Format": "Transformer",
+    "Language": "English",
+    "Dataset": [["emo","https://huggingface.co/datasets/emo"]],
+    "Overview": "A BERT model fine tuned on the emo dataset which classifies conversational data into 4 distinct emotions.",
+    "Preprocessing": null,
+    "Link": "https://drive.google.com/file/d/124dC4552St0_wXrVMT8yhdz5hDdEXCEk/view?usp=sharing",
+    "Usage": "usage.html",
+    "References": ["https://arxiv.org/abs/1810.04805"],
+    "Input Shape": [["Tokenize using tokenizer"]],
+    "Output Shape": [["Transformer decides"]],
+    "Description": "Pretrained model on English language using a masked language modeling (MLM) objective. Fine tuned on the EmoContext Dataset for emotion recogniton. BERT is a transformers model pretrained on a large corpus of English data in a self-supervised fashion. This means it was pretrained on the raw texts only, with no humans labelling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those texts."
+}

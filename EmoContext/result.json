@@ -13,5 +13,6 @@
     "Usage": "usage.html",
     "References": ["https://www.aclweb.org/anthology/S19-2005/"],
     "Input Shape": [[1, 1, 768]],
-    "Output Shape": [[1,6]]
+    "Output Shape": [[1,6]],
+    "Description": "This Model has been trained on the EmoContext dataset for emotion detection using 3 turn conversations between 2 entities. The Emotions are classified into happy, sad, angry and others. The model uses the distilbert pipeline for embedding abstraction and a custom top is designed for the task at hand.The EmoContext uses conversations between 2 entities in the form of 3 sentenced textual dialogue. This does not include metadata like facial expressions and void modulations thus making the problem harder."
 }

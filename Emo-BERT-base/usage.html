@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Untitled</title>
+<title>usage</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13076,10 +13076,10 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">forest_utils.export_keras</span> <span class="k">import</span> <span class="n">ModelFromSavedModel</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">forest_utils.export_transformers</span> <span class="kn">import</span> <span class="n">ModelFromTransformerForClassification</span>
 </pre></div>
 
     </div>
@@ -13089,10 +13089,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_obj</span> <span class="o">=</span> <span class="n">ModelFromSavedModel</span><span class="p">(</span><span class="s2">&quot;ocr&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_obj</span> <span class="o">=</span> <span class="n">ModelFromTransformerForClassification</span><span class="p">(</span><span class="s2">&quot;emo-bert-base&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13102,13 +13102,143 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_obj</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_obj</span><span class="o">.</span><span class="n">device</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;cuda&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_obj</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">config</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>BertConfig {
+  &#34;architectures&#34;: [
+    &#34;BertForSequenceClassification&#34;
+  ],
+  &#34;attention_probs_dropout_prob&#34;: 0.1,
+  &#34;gradient_checkpointing&#34;: false,
+  &#34;hidden_act&#34;: &#34;gelu&#34;,
+  &#34;hidden_dropout_prob&#34;: 0.1,
+  &#34;hidden_size&#34;: 768,
+  &#34;id2label&#34;: {
+    &#34;0&#34;: &#34;others&#34;,
+    &#34;1&#34;: &#34;happy&#34;,
+    &#34;2&#34;: &#34;sad&#34;,
+    &#34;3&#34;: &#34;angry&#34;
+  },
+  &#34;initializer_range&#34;: 0.02,
+  &#34;intermediate_size&#34;: 3072,
+  &#34;label2id&#34;: {
+    &#34;angry&#34;: 3,
+    &#34;happy&#34;: 1,
+    &#34;others&#34;: 0,
+    &#34;sad&#34;: 2
+  },
+  &#34;layer_norm_eps&#34;: 1e-12,
+  &#34;max_position_embeddings&#34;: 512,
+  &#34;model_type&#34;: &#34;bert&#34;,
+  &#34;num_attention_heads&#34;: 12,
+  &#34;num_hidden_layers&#34;: 12,
+  &#34;pad_token_id&#34;: 0,
+  &#34;type_vocab_size&#34;: 2,
+  &#34;vocab_size&#34;: 30522
+}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sentence</span> <span class="o">=</span> <span class="s2">&quot;I&#39;ve never had such a bad day in my life&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_obj</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;sad&#39;</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 

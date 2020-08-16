@@ -1,6 +1,6 @@
 {
     "Title": "Optical Character Recognition",
-    "Tags": [["Optical Character Recognition"],["OCR"]],
+    "Tags": ["Optical Character Recognition","OCR"],
     "Architecture": "LSTM-GlobalMaxPool1D",
     "Publisher": [["Atharva Hudlikar","https://github.com/Mastermind0100/Optical-Character-Recognizer"], ["Smoketrees","https://github.com/smoke-trees"]],
     "Problem Domain": "Image",
@@ -9,9 +9,10 @@
     "Dataset": [["NIST Dataset","https://s3.amazonaws.com/nist-srd/SD19/by_class.zip"]],
     "Overview": "An OCR System with a character recogniton model based on multiple class classification.",
     "Preprocessing": null,  
-    "Link": "https://drive.google.com/file/d/1VA8jpvqXzDAP63_UMukUfR8fXX1X3Tmb/view?usp=sharing",
+    "Link": "https://drive.google.com/file/d/1bm2j-3mzUuMgux0DQWJ0afra_VC1zPcU/view?usp=sharing",
     "Usage": "usage.html",
     "References": ["https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42241.pdf"],
     "Input Shape": [[64,64]],
-    "Output Shape": [[1,1]]
+    "Output Shape": [[1,1]],
+    "Description": "OCR or Optical Character Recognition is the task of converting  images of typed, handwritten or printed text into machine encoded text. This can be done either from a photo of a document, a scene-photo or from subtitle text superimposed on images. This model solves this task and is present in the Tensorflow format."
 }
