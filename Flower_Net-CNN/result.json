@@ -1,0 +1,15 @@
+{"Title": "Flower_Net",
+"Tags": ["Computer Vision","CNN"],
+"Architecture":"CNN-2D",
+"Publisher": [["Aryaman Sriram","https://github.com/aryamansriram"],["Smoketrees","https://github.com/smoke-trees"]],
+"Problem Domain": "Image",
+"Model Format":"CNN Ensemble",
+"Language": "English",
+"Dataset": [["Flower Recognition","https://www.kaggle.com/alxmamaev/flowers-recognition"]],
+"Link" : "https://drive.google.com/file/d/1wk2VXY38r10EK4ApebvrtMGR0XnK_13X/view?usp=sharing",
+"Usage": "usage.html",
+"Input Shape": [["224X224"]],
+"Output Shape": [["1X5"]],
+"Description": "Flower_Net is a custom ensemble architecture consisting of 3 convolutional neural networks consisting of filters of different sizes which aims to learn as many features as it can from around 4000 images of flowers and classify five different categories of flowers. 
+
+}
