@@ -1,7 +1,7 @@
 {
     "Title": "Optical Character Recognition",
     "Tags": ["Optical Character Recognition","OCR"],
-    "Architecture": "LSTM-GlobalMaxPool1D",
+    "Architecture": "Classifier",
     "Publisher": [["Atharva Hudlikar","https://github.com/Mastermind0100/Optical-Character-Recognizer"], ["Smoketrees","https://github.com/smoke-trees"]],
     "Problem Domain": "Image",
     "Model Format": "Tensorflow",
