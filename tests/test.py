@@ -28,6 +28,17 @@ class TestZoo(unittest.TestCase):
                     self.assertEqual(k, "", "Key " + k + " in " + i + " is not one of the recommended keys")
             f.close()
         
+    def test_paths(self):
+        l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]
+        ll = [os.path.exists(os.path.join(i, 'result.json')) for i in l]
+        all_dirs = [i for i,j in zip(l,ll) if j]
+        for i in all_dirs:
+            with open(os.path.join(i, 'result.json'), 'rb') as f:
+                g = json.load(f)
+            self.assertTrue(os.path.exists(os.path.join(i, g["Usage"])), "Usage notebook missing in " + i)
+            if g["Preprocessing"] != "null" and g["Preprocessing"]:
+                self.assertTrue(os.path.exists(os.path.join(i, g["Preprocessing"])), "Preprocessing notebook missing in " + i)
+
 
 if __name__ == '__main__':
     unittest.main()
