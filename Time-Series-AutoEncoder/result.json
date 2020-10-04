@@ -1,0 +1,18 @@
+{
+    "Title": "Time Series AutoEncoder",
+    "Tags": ["Autoencoder", "RNN"],
+    "Architecture": "CNN1D-Autoencoder",
+    "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"]],
+    "Problem Domain": "Time Series",
+    "Model Format": "Tensorflow2",
+    "Language": "null",
+    "Dataset": [["Numenta Anomaly Benchmark (NAB)","https://github.com/numenta/NAB"]],
+    "Overview": "Timeseries anomaly detection using an Autoencoder",
+    "Preprocessing": "null",
+    "Link": "https://drive.google.com/file/d/1xwceB6Il9zTf6H0q42MKVTmH0dJyreh6/view?usp=sharing",
+    "Usage": "usage.html",
+    "References": ["https://www.researchgate.net/publication/282843900_Evaluating_Real-Time_Anomaly_Detection_Algorithms_--_The_Numenta_Anomaly_Benchmark"],
+    "Input Shape": [[288,1]],
+    "Output Shape": [[288,1]],
+    "Description": "This CNN1D-Autoencoder demonstrates how you can use a reconstruction convolutional autoencoder model to detect anomalies in timeseries data. Till now timeseries reconstruction has been limited to primitive stacking of RNN layers but now we can reconstruct timeseries mathematically by transposing the convolutional operation. This is especially helpful in detecting anomalies in periodic patterns. The model will take input of shape (batch_size, sequence_length, num_features) and return output of the same shape. We will detect anomalies by determining how well our model can reconstruct the input data."
+}
