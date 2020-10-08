@@ -1,5 +1,5 @@
 ## Welcome to SmokeTrees Forest
-Our own model-zoo, formatless, indigenous and ease of utility models made by yours truly.
+Our own model-zoo, non format specific, indigenous and ease of utility models made by the Deep Learning Community.
 
 SmokeTrees Forest has a unique structure, it includes all models as seperate entities, so that we can avoid enviorment collapses in python.
 
