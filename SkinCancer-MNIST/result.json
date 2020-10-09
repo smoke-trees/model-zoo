@@ -5,7 +5,7 @@
     "Publisher": [["Aryaman Sriram","https://github.com/aryamansriram"], ["Smoketrees","https://github.com/smoke-trees"]],
     "Problem Domain": "Image",
     "Model Format": ["Keras","Tensorflow"],
-    "Language": "null",
+    "Language": "",
     "Dataset": [["Skin Cancer MNIST","https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000"]],
     "Overview": "CNN built to classify type of cancer from skin lesion images.",
     "Preprocessing": "null",

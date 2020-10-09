@@ -6,10 +6,6 @@ import unittest
 
 class TestZoo(unittest.TestCase):
 
-    def _get_complete_url(self, url):
-        split_url = url.split('/')
-        return self.base_url + split_url[5]
-
     def test_listdirs(self):
         l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]
         ll = [os.path.exists(os.path.join(i, 'result.json')) for i in l]
@@ -43,6 +39,19 @@ class TestZoo(unittest.TestCase):
             self.assertTrue(os.path.exists(os.path.join(i, g["Usage"])), "Usage notebook missing in " + i)
             if g["Preprocessing"] != "null" and g["Preprocessing"]:
                 self.assertTrue(os.path.exists(os.path.join(i, g["Preprocessing"])), "Preprocessing notebook missing in " + i)
+
+    def test_lang(self):
+        l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]
+        ll = [os.path.exists(os.path.join(i, 'result.json')) for i in l]
+        all_dirs = [i for i,j in zip(l,ll) if j]
+        for i in all_dirs:
+            with open(os.path.join(i, 'result.json'), 'rb') as f:
+                g = json.load(f)
+            if(g["Problem Domain"] == "Text" and not g["Language"]):
+                self.fail("No Language was given for Text Model")
+            if(g["Problem Domain"] != "Text" and g["Language"]):
+                print(i)
+                self.fail("Problem Domain was not text but Language was specified")
 
     """def test_model_existence(self):
         l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]

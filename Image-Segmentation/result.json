@@ -5,7 +5,7 @@
     "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"]],
     "Problem Domain": "Image",
     "Model Format": "Tensorflow2",
-    "Language": null,
+    "Language": "",
     "Dataset": [["Pets Dataset","http://www.robots.ox.ac.uk/~vgg/data/pets/data/"]],
     "Overview": "Image segmentation with a U-Net-like architecture",
     "Preprocessing": null,

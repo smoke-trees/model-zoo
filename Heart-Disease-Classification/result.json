@@ -5,7 +5,7 @@
     "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"]],
     "Problem Domain": "Sequence",
     "Model Format": "Tensorflow2",
-    "Language": "null",
+    "Language": "",
     "Dataset": [["MIT-BIH","https://physionet.org/content/mitdb/1.0.0/"]],
     "Overview": "A classification task done on the MIT-BIH dataset, split into 5 labels.",
     "Preprocessing": "null",

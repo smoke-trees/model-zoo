@@ -5,7 +5,7 @@
     "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"]],
     "Problem Domain": "Time Series",
     "Model Format": "Tensorflow2",
-    "Language": "null",
+    "Language": "",
     "Dataset": [["Numenta Anomaly Benchmark (NAB)","https://github.com/numenta/NAB"]],
     "Overview": "Timeseries anomaly detection using an Autoencoder",
     "Preprocessing": "null",

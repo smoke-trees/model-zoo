@@ -5,7 +5,7 @@
     "Publisher": [["Tanmay Thakur","https://github.com/lordtt13"], ["Smoketrees","https://github.com/smoke-trees"]],
     "Problem Domain": "Image",
     "Model Format": "Tensorflow2",
-    "Language": "null",
+    "Language": "",
     "Dataset": [["MNIST","http://yann.lecun.com/exdb/mnist/"]],
     "Overview": "A VAE made from the MNIST dataset, with ELBO losses",
     "Preprocessing": "null",
