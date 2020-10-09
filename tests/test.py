@@ -1,9 +1,14 @@
 import os
 import json
+import gdown
 import unittest
 
 
 class TestZoo(unittest.TestCase):
+
+    def _get_complete_url(self, url):
+        split_url = url.split('/')
+        return self.base_url + split_url[5]
 
     def test_listdirs(self):
         l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]
@@ -27,7 +32,7 @@ class TestZoo(unittest.TestCase):
                 if k not in keys:
                     self.assertEqual(k, "", "Key " + k + " in " + i + " is not one of the recommended keys")
             f.close()
-        
+
     def test_paths(self):
         l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]
         ll = [os.path.exists(os.path.join(i, 'result.json')) for i in l]
@@ -38,6 +43,20 @@ class TestZoo(unittest.TestCase):
             self.assertTrue(os.path.exists(os.path.join(i, g["Usage"])), "Usage notebook missing in " + i)
             if g["Preprocessing"] != "null" and g["Preprocessing"]:
                 self.assertTrue(os.path.exists(os.path.join(i, g["Preprocessing"])), "Preprocessing notebook missing in " + i)
+
+    """def test_model_existence(self):
+        l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]
+        ll = [os.path.exists(os.path.join(i, 'result.json')) for i in l]
+        all_dirs = [i for i,j in zip(l,ll) if j]
+        base_url = 'https://drive.google.com/uc?id='
+        for i in all_dirs:
+            with open(os.path.join(i, 'result.json'), 'rb') as f:
+                g = json.load(f)
+            try:    
+                gdown.download(base_url + g["Link"].split('/')[5], 'redundant', quiet = True)
+            except Exception as e:
+                self.fail(e)
+            break"""
 
 
 if __name__ == '__main__':
