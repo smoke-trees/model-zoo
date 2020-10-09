@@ -53,6 +53,15 @@ class TestZoo(unittest.TestCase):
                 print(i)
                 self.fail("Problem Domain was not text but Language was specified")
 
+    def test_desc_len(self):
+        l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]
+        ll = [os.path.exists(os.path.join(i, 'result.json')) for i in l]
+        all_dirs = [i for i,j in zip(l,ll) if j]
+        for i in all_dirs:
+            with open(os.path.join(i, 'result.json'), 'rb') as f:
+                g = json.load(f)
+            self.assertLess(100, len(list(g["Description"])), "Description should have more than a hundered charachters")
+
     """def test_model_existence(self):
         l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]
         ll = [os.path.exists(os.path.join(i, 'result.json')) for i in l]
