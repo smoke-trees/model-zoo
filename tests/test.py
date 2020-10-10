@@ -62,20 +62,6 @@ class TestZoo(unittest.TestCase):
                 g = json.load(f)
             self.assertLess(100, len(list(g["Description"])), "Description should have more than a hundered charachters")
 
-    """def test_model_existence(self):
-        l = [i for i in os.listdir() if i not in ['Readme.md', '.ipynb_checkpoints', '.gitignore', '.git', "tests",".github"]]
-        ll = [os.path.exists(os.path.join(i, 'result.json')) for i in l]
-        all_dirs = [i for i,j in zip(l,ll) if j]
-        base_url = 'https://drive.google.com/uc?id='
-        for i in all_dirs:
-            with open(os.path.join(i, 'result.json'), 'rb') as f:
-                g = json.load(f)
-            try:    
-                gdown.download(base_url + g["Link"].split('/')[5], 'redundant', quiet = True)
-            except Exception as e:
-                self.fail(e)
-            break"""
-
 
 if __name__ == '__main__':
     unittest.main()
