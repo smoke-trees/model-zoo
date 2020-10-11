@@ -10,6 +10,5 @@
 "Usage": "usage.html",
 "Input Shape": [["224X224"]],
 "Output Shape": [["1X5"]],
-"Description": "Flower_Net is a custom ensemble architecture consisting of 3 convolutional neural networks consisting of filters of different sizes which aims to learn as many features as it can from around 4000 images of flowers and classify five different categories of flowers. 
-
+"Description": "Flower_Net is a custom ensemble architecture consisting of 3 convolutional neural networks consisting of filters of different sizes which aims to learn as many features as it can from around 4000 images of flowers and classify five different categories of flowers." 
 }
