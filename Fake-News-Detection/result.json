@@ -2,9 +2,8 @@
     "Title": "Fake-News-Detection",
     "Tags": ["Natural Language Processing"],
     "Architecture": "Logistic Regression",
-    "Publisher": [["Geeky-star","https://github.com/Geeky-star"], ["Smoketrees","https://github.com/smoke-trees"]], 
     "Problem Domain": "Text",
-    "Model Format": "Transformer",
+    "Model Format": "Text-based",
     "Language": "English",
     "Dataset": [["FKN","https://www.kaggle.com/nimratrandhawa/fake-news-classification/input/dataset/train.csv"]],
     "Overview": "A LogisticRegression model fine tuned on the dataset which classifies conversational data into Fake or Real news.",
@@ -13,6 +12,6 @@
     "Usage": "usage.html",
     "References": ["https://www.sciencedirect.com/science/article/pii/S1877050918318210"],
     "Input Shape": [["Tokenize using tokenizer"]],
-    "Output Shape": [["Transformer decides"]],
+    "Output Shape": [[1]],
     "Description": "Pretrained model on English language. Fine tuned on the FKN Dataset for news classification into two categories Fake or Real."
 }
