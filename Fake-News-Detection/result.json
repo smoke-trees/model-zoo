@@ -2,6 +2,7 @@
     "Title": "Fake-News-Detection",
     "Tags": ["Natural Language Processing"],
     "Architecture": "Logistic Regression",
+    "Publisher": ["Geeky-star","https://github.com/Geeky-star"]
     "Problem Domain": "Text",
     "Model Format": "Text-based",
     "Language": "English",
